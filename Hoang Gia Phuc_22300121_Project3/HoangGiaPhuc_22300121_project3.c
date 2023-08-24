@@ -45,6 +45,7 @@ int main() {
 	InDanhSach_SauKhiDaThem(staff, n, more);
 	printf("Xoa nhan vien trong danh sach(chon STT): ");
 	Delete(staff, n, more, del);
+	fflush(stdin);
 	InDanhSach_SauKhiDaXoa(staff, n, more, del);
 	Write(staff, n, more, del);
 	OutPut(staff, n, more, del);
@@ -99,6 +100,7 @@ int main() {
 				printf("Xoa nhan vien trong danh sach: ");
 				scanf("%d", &del);
 				Delete(staff, n, more, del);
+				fflush(stdin);
 				InDanhSach_SauKhiDaXoa(staff, n, more, del);
 				Write(staff, n, more, del);
 				OutPut(staff, n, more, del);
